@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "productName": "gato",
+      "price": "80",
+      "image": "http://127.0.0.1:5500/DogGeekery/Items/Pato.jpg",
+      "id": 1
+    },
+    {
+      "productName": "poto",
+      "price": "100",
+      "image": "https://target.scene7.com/is/image/Target/GUEST_f2fe38d0-8f47-4d16-9b17-af9c0a9e065f?wid=488&hei=488&fmt=pjpeg",
+      "id": 2
+    },
+    {
+      "productName": "",
+      "price": "",
+      "image": "",
+      "id": 3
+    }
+  ]
+}

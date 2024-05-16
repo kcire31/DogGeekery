@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html class="js" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DogGeekery</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" type="text/css" href="flexbox.css">
+        <link rel="shortcut icon" href="Items/Pato.jpg">
+        <!-- <script src="main.js" defer></script> -->
+        <!-- <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+             var scrollpos = localStorage.getItem('scrollpos');
+             if (scrollpos) window.scrollTo(0, scrollpos);
+            });
+
+            window.onbeforeunload = function(e) {
+             localStorage.setItem('scrollpos', window.scrollY);
+            };
+        </script> -->
+    </head>
+    <body>
+        <header>
+            <section class="header_title">
+                <div class="dingbats">yde</div>
+                <h1>DogGeekery</h1>
+                <div class="dingbats">hgz</div>
+            </section>
+        </header> 
+
+        <main>
+            <div class="side1">
+                <section class="products_title">
+                    <h1>MY PRODUCTS</h1>
+                </section> 
+                <section class="cards" data-list>
+                    <!-- Here the cards go -->
+                </section>
+            </div>
+            
+            <div class="side2">
+                <section class="products_title">
+                    <h1>ADD PRODUCT</h1>
+                </section>
+
+                <form data-form>
+                    <div class="full-input">
+                        <input type="text" id="name_product" class="main_input" required placeholder="Product Name" data-name>    
+                    </div>
+                    
+                    <div class="full-input">
+                        <input type="text" inputmode="numeric" pattern="[0-9]\d*" id="price" class="main_input" required placeholder="Price" maxlength="5" data-price>
+                        <!-- no acepta punto 50.5 darle formato para que se pueda ver mejor -->
+                    </div>
+                    
+                    <div class="full-input">
+                        <input type="url" id="url" class="main_input" required placeholder="Image" data-image>
+                        <!-- puede ser que podamos subir imagen desde carpeta, o cualquier url -->
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit" value="Send" class="submit">
+                    </div>
+                </form>
+            </div>
+            
+
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="dingbats">yde</div>
+                <h1>DogGeekery</h1>
+                <div class="dingbats">hgz</div>
+            </section>
+            <p class="Copyright">Developed by Erick Bacilio - 2024</p>
+        </footer>
+
+        <script src="js/showProduct.js" type="module"></script>
+        <script src="js/createProduct.js" type="module"></script>
+        <script src="js/deleteProduct.js" type="module"></script>
+
+    </body>
+</html>

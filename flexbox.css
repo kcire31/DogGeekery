@@ -1,0 +1,68 @@
+/* HEADER */
+.header_title{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+/* PRODUCTS */
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    gap: 15px;
+}
+
+.price_trash{
+    display: flex;
+    /* gap: 100px; */
+    align-items: center;
+}
+
+.price_trash2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FORM */
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* FOOTER */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+@media screen and (max-width:1030px){
+    /* PRODUCTS */
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cards{
+        flex-wrap: nowrap;
+        justify-content: initial;  
+    } 
+}
+
+@media screen and (min-width:768px){
+    .cards{
+        flex-wrap: wrap;
+        justify-content: center; 
+    }   
+}

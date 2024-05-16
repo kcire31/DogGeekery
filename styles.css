@@ -1,0 +1,255 @@
+/* FONTS */
+@font-face {
+    font-family: 'Fredoka One';
+    src: 
+    url(Fonts/FredokaOne-Regular.woff2) format("woff2"),
+    url(Fonts/FredokaOne-Regular.woff) format("woff"),
+    url(Fonts/fredoka-one.one-regular.ttf) format("truetype"),
+    url(Fonts/fredoka-one.dingbats.ttf) format("truetype");
+    font-display: swap;   
+}
+
+@font-face {
+    font-family: 'Fredoka dingbats';
+    src: 
+    url(Fonts/Fredokadingbats.woff2) format("woff2"),
+    url(Fonts/Fredokadingbats.woff) format("woff"),
+    url(Fonts/fredoka-one.dingbats.ttf) format("truetype");
+    font-display: swap;   
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar{
+    width: 11px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(128, 128, 128, 0.199);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(83, 0, 200, 1);
+    border-radius: 6px;
+}
+
+/* HEADER */
+.header_title{
+    font-family: 'Fredoka One';
+    background: rgba(83, 0, 200, 1);
+    color: white;
+    font-size: 24px;
+    padding: 20px 0 20px;
+} 
+
+.dingbats{
+    font-family: 'Fredoka dingbats';
+    font-size: 40px;
+}
+
+main .error_message{
+    font-family: 'Fredoka One';
+    font-size: 30px;
+    margin-top: 20%;
+}
+
+/* PRODUCTS */
+.side1{
+    width: 50%;
+}
+
+/* .side2{
+    width: 40%;
+} */
+
+.noItems{
+    font-family: 'Fredoka One';
+    font-size: 30px;
+    line-height: 1.2em;
+    padding-bottom: 15px;
+}
+
+.products_title{
+    font-family: 'Fredoka One';
+    font-size: 30px;
+    margin: 50px 0 50px;
+    width: 100%;
+    /* position: relative;
+    left: 10%; */
+    text-align: center;
+}
+
+.cards{
+    width: 100%;
+    max-height: 610px;
+    overflow: auto;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    border: 2px dashed rgb(204, 197, 197);
+
+} 
+
+.cards_container{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 20px;
+    background: rgba(83, 0, 200, 1);
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    box-shadow: -5px 6px 3.3px 0px rgb(0 0 0 / 25%);
+}
+
+#Items{
+    width: 176px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background: rgba(83, 0, 200, 1);
+}
+
+.price_trash{
+    font-family: 'Fredoka One';
+    padding: 10px 0 10px;
+    font-size: 16px;
+}
+
+.price_trash2{
+    font-family: 'Fredoka One';
+    padding: 10px 0 10px;
+    font-size: 16px;
+}
+
+#trash{
+    cursor: pointer;
+}
+
+
+/* FORM */
+.main_input{
+    outline: none;
+    border: none;
+    line-height: 1.5em;
+    font-size: 30px;
+    font-family: 'Fredoka One';
+    background-color: transparent;
+}
+
+.full-input{
+    border: 3px solid rgba(83, 0, 200, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: "Mosk Bold 700";
+}
+
+.full-input:focus-within{
+    border: 3px solid  orange;
+}
+
+.submit{
+    width: 120px;
+    font-family: 'Fredoka One';
+    font-size: 18px;
+    color: rgb(64, 64, 64);
+    text-decoration: none; 
+    border-style: solid;
+    border-width: 2px 6px 6px 2px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .2s cubic-bezier(.34,1.56,.64,1);
+}
+
+.submit:hover{
+    border-width: 2px 2px 2px 2px;
+    transform: translate(4px, 4px);
+}
+
+
+/* FOOTER */
+footer{
+    font-family: 'Fredoka One';
+    background: rgba(83, 0, 200, 1);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+} 
+
+
+@media screen and (max-width:1030px){
+
+    /* PRODUCTS */
+    .side1{
+        width: 90%;
+    }
+
+    .cards{
+        width: auto;
+        margin-bottom: 100px;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 2px dashed rgb(204, 197, 197);
+    }
+
+    /* FORM */
+    .full-input{
+        width: 70%;
+    }
+
+    .main_input{
+        width: 100%;
+    }
+
+    .full-input{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* FOOTER */
+
+    main .error_message{
+        height: calc(70vh - 50px);
+        padding-top: 20%;
+        text-align: center;
+    }
+
+    .noItems{
+        height: calc(20vh - 50px);
+    }
+
+    footer{
+        font-size: 16px;
+        position: relative;
+    } 
+
+    /*SCROLL BAR*/
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    
+    ::-webkit-scrollbar:vertical {
+        width: 12px;
+    }
+    
+    ::-webkit-scrollbar:horizontal {
+        height: 12px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+    }
+    
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ffffff;
+    } 
+}
+
+
